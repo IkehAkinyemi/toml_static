@@ -45,6 +45,6 @@ fn main() {
 
     let _serialized = serde_json::to_string(&config).expect("error serializing to json");
 
-    println!("{:?}", config.postgresql.database);
+    println!("[postgresql].database: {}", config.postgresql.database);
     // println!("{}", serialized);
 }

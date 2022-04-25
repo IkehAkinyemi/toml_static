@@ -1,0 +1,12 @@
+[package]
+name = "toml_static"
+version = "0.1.0"
+edition = "2021"
+authors = ["mrikehchukwuka@gmail.com"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.4"
+serde_json = "1.0"

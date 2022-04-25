@@ -43,8 +43,8 @@ fn main() {
         toml::from_str(&config_text).expect("error reading stream")
     };
 
-    let serialized = serde_json::to_string(&config).expect("error serializing to json");
+    let _serialized = serde_json::to_string(&config).expect("error serializing to json");
 
-    // println!("{:?}", config);
-    println!("{}", serialized);
+    println!("{:?}", config.postgresql.database);
+    // println!("{}", serialized);
 }
